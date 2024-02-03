@@ -1,3 +1,4 @@
+# Quiz Questions
 questions=("1. How many Bits make one Byte?",
            "2. Which electronic component was used in the first generation of computers?",
            "3. The first program that runs on a computer when the computer boots up is?",
@@ -13,7 +14,7 @@ questions=("1. How many Bits make one Byte?",
            "13. What does XML stand for?",
            "14. What is the meaning of OSI, in terms of computers?",
            "15.  In the context of Computer Memory, what does DMA stand for?")
-
+# Options for each question
 options=(("A. 16 bits","B. 32 bits","C. 64 bits","D. 8 bits"),
          ("A. Vaccum tubes","B. Red tubes","C. Abacus","D. Transistors"),
          ("A. Software Program","B. Operating System","C. Utilities","D. None of the above mentioned"),
@@ -29,14 +30,14 @@ options=(("A. 16 bits","B. 32 bits","C. 64 bits","D. 8 bits"),
          ("A. Extensible Markup Language","B. Extra Mobile Link","C. Extended Modulation Level","D. Extreme Media Library"),
          ("A. Open Source Interface","B. Operational System Integration","C. Optical Sensor Interface","D. Open Systems Interconnection"),
          ("A. Data Manipulation Algorithm","B. Direct Memory Access","C. Digital Media Adapter","D. Dynamic Memory Allocation"))
-
+# Correct answers for each question
 answers=("D","A","B","D","A","B","C","A","A","A","B","C","A","D","B")
-
+# Store the responses from the user into guesses
 guesses=[]
-
+# Calculating the score
 score=0
 question_num=0
-
+# asking questions to users
 for i in questions:
     print("*****************************************")
     print(i)
@@ -53,7 +54,7 @@ for i in questions:
         print(f"{answers[question_num]} is the correct answer.")
     question_num+=1
 print()
-
+# Printing results
 print("*****************************************")
 print("                RESULTS                  ")
 print("*****************************************")
